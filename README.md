@@ -1,5 +1,5 @@
 # InserSim
-
+[![License](http://img.shields.io/:license-affero-blue.svg)](http://www.gnu.org/licenses/agpl-3.0.en.html)
 ## Description 
 InserSim is an ensemble of script to simulate insertion in a reference genome and to benchmark insertion from SV caller.
 
