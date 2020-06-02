@@ -17,8 +17,8 @@ The simulation folder contains three scripts : `Novo_dup_generator.py` to simula
 | Option | Description |
 | ------------ | ----------------------------------------- |
 | -g | reference genome in FASTA format | 
-| -b | bed file, to generate insertion in specific regions |
-| -n : number of insertion (int) |
+| -b | bed file, to generate insertions in specific regions |
+| -n | number of insertions (int) |
 | -s | size of insertion (int) |
 | -p | induced snp near insertion (True/false, false by default) |
 | -o | output file name |
@@ -39,11 +39,11 @@ The simulation folder contains three scripts : `Novo_dup_generator.py` to simula
 | -v | vcf file, position from the vcf will be used to generate new insertion type |
 | -g | reference genome, use the same version that the vcf file |
 | -m | mobile element database in fasta format |
-| -t | generate tandem duplication |
-| -r | generate tandem repeat |
-| -u | seed size for tandem repeat (6 by default) |
-| -me | generate mobile element |
-| -s | size of the insertio to generate. In case of mobile element simulation, a size +/- 50 will be used to found potential mobile element in the database |
+| -t | generate tandem duplications |
+| -r | generate tandem repeats |
+| -u | seed size for tandem repeats (6 by default) |
+| -me | generate mobile elements |
+| -s | size of the insertion to generate. In case of mobile element simulation, a size +/- 50 will be used to find suitable mobile elements in the database |
 
 ### Usage :
     python3 New_Simulation_type.py -v position_use_to_simulate.vcf -g reference_genome.fa -m mobile_element.fa -t True -s 500
@@ -52,7 +52,7 @@ The simulation folder contains three scripts : `Novo_dup_generator.py` to simula
 ### Parameters :
 | Option | Description |
 | ------------ | ----------------------------------------- |
-| -v | vcf reference file, location and sequence resolved in ALT column required |
+| -v | vcf reference file, precise location and resolved sequence in ALT column are required |
 | -g | reference genome used to obtain the vcf file |
 | -m | microhomology size |
 | -t | name for the output file |
